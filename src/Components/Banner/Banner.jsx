@@ -19,8 +19,6 @@ const Banner = () => {
                     <img src="../../../public/assets/All Images/P3OLGJ1 copy 1.png" alt="banner Image" />
                 </div>
             </section>
-            <JobCategory></JobCategory>
-            <Features></Features>
         </div>
 
     );

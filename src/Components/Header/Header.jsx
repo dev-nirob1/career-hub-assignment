@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Banner from '../Banner/Banner';
-import { Link } from 'react-router-dom';
 import ActiveLink from '../ActiveLink/ActiveLink';
 import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/solid'
 
@@ -8,7 +6,7 @@ const Header = () => {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className='flex border justify-between items-center container mx-auto h-20'>
+        <div className='flex justify-between items-center container mx-auto h-20'>
             <h2 className='text-3xl md:text-4xl font-bold'>JobFinder</h2>
 
             <div className='order-2 md:hidden' onClick={() => setOpen(!open)}>
