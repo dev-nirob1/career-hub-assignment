@@ -23,6 +23,8 @@ const Header = () => {
                 <ActiveLink to="/applied-job">Applied Jobs</ActiveLink>
                 <ActiveLink to="/blog">Blog</ActiveLink>
             </nav>
+
+            
             <button className='text-base text-[20px] text-white px-4 md:px-7 py-3 md:py-5  bg-gradient-to-r from-[#7E90FE] to-[#9873FF] font-semibold rounded-lg'>Start Applying</button>
 
         </div>

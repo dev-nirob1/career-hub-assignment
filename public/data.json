@@ -1,65 +1,56 @@
 [
-    {
-      "id": 1,
-      "logo": "https://example.com/logo1.png",
-      "title": "Front-end Developer",
-      "company": "ABC Inc.",
-      "job_type": "onsite",
-      "responsibility": "Develop and maintain front-end of web applications",
-      "experience": "2+ years",
-      "job_description": "We are looking for a skilled front-end developer to join our team. You will be responsible for developing and maintaining the front-end of web applications for our clients. The ideal candidate will have experience in front-end development, a strong understanding of web technologies, and the ability to work collaboratively with other team members.",
-      "educational_description": "Bachelor's degree in Computer Science or related field",
-      "location": "New York, NY",
-      "salary": "$80,000 - $100,000",
-      "contact_info": {
-        "phone": "(555) 123-4567",
-        "email": "jobs@abcinc.com",
-        "address": "123 Main St, New York, NY"
-      }
-    },
-    {
-      "id": 2,
-      "logo": "https://example.com/logo2.png",
-      "title": "Back-end Developer",
-      "company": "XYZ Co.",
-      "job_type": "remote",
-      "responsibility": "Develop and maintain back-end of web applications",
-      "experience": "3+ years",
-      "job_description": "We are seeking a talented back-end developer to help us create and maintain robust, scalable, and secure web applications. The ideal candidate will have experience in back-end development, a strong understanding of web technologies, and the ability to work collaboratively with other team members.",
-      "educational_description": "Bachelor's degree in Computer Science or related field",
-      "location": "Remote",
-      "salary": "$90,000 - $120,000",
-      "contact_info": {
-        "phone": "(555) 555-1212",
-        "email": "jobs@xyzco.com",
-        "address": "123 Main St, Anytown, USA"
-      }
-    },
-    {
-      "id": 3,
-      "logo": "https://example.com/logo3.png",
-      "title": "Product Manager",
-      "company": "Acme Corp.",
-      "job_type": "full time",
-      "responsibility": "Lead and manage the development of new products",
-      "experience": "5+ years",
-      "job_description": "Acme Corp. is looking for an experienced Product Manager to lead and manage the development of new products. The ideal candidate will have experience in product management, a strong understanding of product development processes, and the ability to work collaboratively with cross-functional teams.",
-      "educational_description": "Bachelor's degree in Business Administration or related field",
-      "location": "Los Angeles, CA",
-      "salary": "$120,000 - $150,000",
-      "contact_info": {
-        "phone": "(555) 555-5555",
-        "email": "jobs@acmecorp.com",
-        "address": "123 Main St, Los Angeles, CA"
-      }
-    },
-    {
-      "id": 4,
-      "logo": "https://example.com/logo4.png",
-      "title": "UX Designer",
-      "company": "QWERTY Inc.",
-      "job_type": "onsite",
-      "responsibility": "Create user-centered design solutions for web and mobile applications"}
-    ]
-     
-  
+  {
+    "id": 1,
+    "logo": "https://www.facebook.com/images/fb_icon_325x325.png",
+    "title": "Software Engineer",
+    "company": "Facebook",
+    "job_type": "Full-time",
+    "responsibility": "Design and implement software applications using Java and Python.",
+    "experience": "5+ years",
+    "job_description": "We are looking for a talented software engineer to join our team and help us build the next generation of Facebook products.",
+    "educational_description": "Bachelor's or Master's degree in Computer Science or related field.",
+    "location": "Menlo Park, CA",
+    "salary": "$150,000 - $200,000",
+    "contact_information": {
+      "phone": "555-123-4567",
+      "email": "recruiting@facebook.com",
+      "address": "1 Hacker Way, Menlo Park, CA 94025"
+    }
+  },
+  {
+    "id": 2,
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Amazon_logo_%28black%29.svg/1200px-Amazon_logo_%28black%29.svg.png",
+    "title": "Data Analyst",
+    "company": "Amazon",
+    "job_type": "Full-time",
+    "responsibility": "Analyze large sets of data to identify trends and patterns that will help inform business decisions.",
+    "experience": "2+ years",
+    "job_description": "We are seeking a data analyst to join our team and help us optimize our operations through data-driven decision-making.",
+    "educational_description": "Bachelor's or Master's degree in Statistics, Mathematics, Economics, or related field.",
+    "location": "Seattle, WA",
+    "salary": "$80,000 - $120,000",
+    "contact_information": {
+      "phone": "555-234-5678",
+      "email": "recruiting@amazon.com",
+      "address": "410 Terry Ave N, Seattle, WA 98109"
+    }
+  },
+  {
+    "id": 3,
+    "logo": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+    "title": "Product Manager",
+    "company": "Google",
+    "job_type": "Full-time",
+    "responsibility": "Develop and execute a product roadmap to meet business objectives and drive user engagement.",
+    "experience": "5+ years",
+    "job_description": "We are looking for a skilled product manager to join our team and help us bring innovative products to market.",
+    "educational_description": "Bachelor's or Master's degree in Computer Science, Business, or related field.",
+    "location": "Mountain View, CA",
+    "salary": "$120,000 - $180,000",
+    "contact_information": {
+      "phone": "555-345-6789",
+      "email": "recruiting@google.com",
+      "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043"
+    }
+  }
+]

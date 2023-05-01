@@ -1,9 +1,17 @@
 import React from 'react';
 
-const Features = () => {
+const Features = ({jobInfo}) => {
+    console.log(jobInfo)
+    const {logo, company, title, location, salary} = jobInfo;
     return (
         <div>
-            this is features job
+            <img src={logo} alt="logo" />
+            <h4>{title}</h4>
+            <p>{company}</p>
+            <div>
+                <p>{location}</p>
+                <p>{salary}</p>
+            </div>
         </div>
     );
 };
