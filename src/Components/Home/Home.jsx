@@ -36,7 +36,7 @@ const Home = () => {
                 <h2 className='text-center text-5xl font-bold'>Featured Jobs</h2>
 
                 <p className='text-center mt-4 mb-8 font-medium text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-                <div className='md:grid grid-cols-2'>
+                <div className='md:grid grid-cols-2 gap-6'>
                 {
                     jobsInfo.map(jobInfo => <Features key={jobInfo.id} jobInfo={jobInfo}></Features>)
                 }
