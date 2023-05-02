@@ -6,7 +6,7 @@ const Header = () => {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className='flex justify-between items-center container mx-auto h-20'>
+        <div className='flex shadow-md justify-between items-center container mx-auto h-20'>
             <h2 className='text-3xl md:text-4xl font-bold'>JobFinder</h2>
 
             <div className='order-2 md:hidden' onClick={() => setOpen(!open)}>
@@ -24,7 +24,6 @@ const Header = () => {
                 <ActiveLink to="/blog">Blog</ActiveLink>
             </nav>
 
-            
             <button className='text-base text-[20px] text-white px-4 md:px-7 py-3 md:py-5  bg-gradient-to-r from-[#7E90FE] to-[#9873FF] font-semibold rounded-lg'>Start Applying</button>
 
         </div>

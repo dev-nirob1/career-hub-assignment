@@ -7,12 +7,18 @@ import { useLoaderData } from 'react-router-dom';
 const Home = () => {
     const jobCategoryData = useLoaderData();
     const [jobsInfo, setJobsInfo] = useState([]);
-
+    
     useEffect(() => {
         fetch('data.json')
-            .then(res => res.json())
-            .then(data => setJobsInfo(data))
+        .then(res => res.json())
+        .then(data => setJobsInfo(data))
     }, []);
+    
+    const [displayCard, setDisplayCard] = useState(4);
+
+    const handleSeeMoreBtn = ()=>{
+        setDisplayCard(jobsInfo.length);
+    }
 
     return (
         <div>
@@ -37,11 +43,15 @@ const Home = () => {
 
                 <p className='text-center mt-4 mb-8 font-medium text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div className='md:grid grid-cols-2 gap-6'>
-                {
-                    jobsInfo.map(jobInfo => <Features key={jobInfo.id} jobInfo={jobInfo}></Features>)
-                }
+                    {
+                        jobsInfo.slice(0, displayCard).map(jobInfo => <Features key={jobInfo.id} jobInfo={jobInfo}></Features>)
+                    }
                 </div>
-                
+
+                {displayCard < jobsInfo.length && (
+                    <button className='block mx-auto my-10 py-4 px-7 border text-xl font-semibold text-white rounded bg-gradient-to-r from-[#7E90FE] to-[#9873FF]' onClick={handleSeeMoreBtn}>See All Jobs</button>
+                )}
+
             </section>
 
         </div>

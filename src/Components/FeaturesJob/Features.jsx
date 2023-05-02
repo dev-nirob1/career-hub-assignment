@@ -1,8 +1,9 @@
 import React from 'react';
 
 const Features = ({ jobInfo }) => {
-    console.log(jobInfo)
+
     const { logo, company, title, location, salary, job_type } = jobInfo;
+
     return (
         <div className='border border-[#E8E8E8] p-10 rounded-lg'>
             <img className='w-32' src={logo} alt="logo" />
