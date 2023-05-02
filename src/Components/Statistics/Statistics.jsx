@@ -35,7 +35,7 @@ const Statistics = () => {
 
     return (
         <div className='text-center mt-10'>
-            <h3 className='text-5xl text-bold'>Statistics of My 7 Assignment Results in Pie Chart</h3>
+            <h3 className='text-4xl text-bold'>Statistics of My 7 Assignment Results in Pie Chart</h3>
 
             <div >
                 <PieChart className='mx-auto' width={500} height={500}>

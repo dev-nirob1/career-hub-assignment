@@ -18,7 +18,7 @@ const Features = ({ jobInfo }) => {
             </div>
             <div className='flex text-[#757575] text-xl font-medium'>
 
-                <p className='mr-6'>{location}</p>
+                <p className='mr-6'> {location}</p>
                 <p>{salary}</p>
             </div>
 
