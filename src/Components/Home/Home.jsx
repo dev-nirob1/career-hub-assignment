@@ -5,18 +5,22 @@ import Features from '../FeaturesJob/Features';
 import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
-    const jobCategoryData = useLoaderData();
-    const [jobsInfo, setJobsInfo] = useState([]);
-    
+    const jobsInfo = useLoaderData();
+    const [jobCategoryData, setJobCategoryData] = useState([]);
+
     useEffect(() => {
-        fetch('data.json')
-        .then(res => res.json())
-        .then(data => setJobsInfo(data))
+        fetch('JobCategory.json')
+            .then(res => res.json())
+            .then(data => setJobCategoryData(data))
     }, []);
-    
+
+    const handleViewDetailsBtn = (id) =>{
+        console.log(id)
+    }
+
     const [displayCard, setDisplayCard] = useState(4);
 
-    const handleSeeMoreBtn = ()=>{
+    const handleSeeMoreBtn = () => {
         setDisplayCard(jobsInfo.length);
     }
 
@@ -44,7 +48,7 @@ const Home = () => {
                 <p className='text-center mt-4 mb-8 font-medium text-[#757575]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div className='md:grid grid-cols-2 gap-6'>
                     {
-                        jobsInfo.slice(0, displayCard).map(jobInfo => <Features key={jobInfo.id} jobInfo={jobInfo}></Features>)
+                       jobsInfo.slice(0, displayCard).map(jobInfo => <Features key={jobInfo.id} jobInfo={jobInfo} handleViewDetailsBtn={handleViewDetailsBtn}></Features>)
                     }
                 </div>
 

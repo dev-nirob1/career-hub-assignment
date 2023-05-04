@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ActiveLink from '../ActiveLink/ActiveLink';
 import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [open, setOpen] = useState(false)
