@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 const JobDetails = () => {
     const [details, setJobDetails] = useState([]);
-    const [loading, setLoading] = useState(true); 
+    const [loading, setLoading] = useState(true);
 
     const id = useParams();
 
@@ -12,13 +12,15 @@ const JobDetails = () => {
             .then((res) => res.json())
             .then((data) => {
                 setJobDetails(data);
-                setLoading(false); 
+
+                setLoading(false);
             });
     }, [id.id]);
 
     const singleDetails = details.find((singleData) => {
         return parseInt(singleData.id) === parseInt(id.id);
     });
+    console.log(singleDetails)
 
     const handleAdd = (id) => {
         console.log(id)
@@ -52,8 +54,24 @@ const JobDetails = () => {
                             <p className='text-lg'>{singleDetails.experience}</p>
                         </div>
                     </div>
-                    <div>
-                        <button onClick={()=> handleAdd(singleDetails.id)} className="px-4 py-3 bg-gray-200">Apply</button>
+
+                    <div className='flex flex-col justify-center items-center'>
+                        <div className='p-6 rounded-lg bg-gradient-to-t from-[#d1d4e7] to-[#c4b9e3]'>
+                            <h3 className='text-xl text-[#1A1919] font-bold'>Job Details</h3>
+                            <hr className='my-2' />
+                            <div className='text-lg text-[#757575] mb-3'>
+                                <p> <span className='text-[#474747] font-semibold'>Salary :</span> {singleDetails.salary} (Per Month)</p>
+                                <p><span className='text-[#474747] font-semibold'>Job Title :</span> {singleDetails.title}</p>
+                            </div>
+                            <h3 className='text-xl text-[#1A1919] font-bold'>Contact Information</h3>
+                            <hr className='my-2' />
+                            <div className='text-lg text-[#757575] mb-3'>
+                                <p><span className='text-[#474747] font-semibold'>Phone :</span> {singleDetails?.contact_information?.phone}</p>
+                                <p><span className='text-[#474747] font-semibold'>Email : </span>{singleDetails?.contact_information?.email}</p>
+                                <p><span className='text-[#474747] font-semibold'>Address :</span> {singleDetails?.contact_information?.address}</p>
+                            </div>
+                        </div>
+                        <button className='py-3 w-full px-4 mt-6 border text-xl font-semibold text-white rounded bg-gradient-to-r from-[#7E90FE] to-[#9873FF]'>Apply Now</button>
                     </div>
                 </div>
             ) : (
