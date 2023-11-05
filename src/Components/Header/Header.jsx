@@ -18,7 +18,7 @@ const Header = () => {
                 }
             </div>
 
-            <nav className={`hidden md:block w-3/4 md:w-fit ${open ? 'top-16 right-0' : '-top-96 right-8 '}`}>
+            <nav className={`md:block hidden w-3/4 md:w-fit ${open ? 'top-16 right-0' : '-top-96 right-8'}`}>
                 <ActiveLink to="/">Home</ActiveLink>
                 <ActiveLink to="/statistics">Statistics</ActiveLink>
                 <ActiveLink to="/applied-job">Applied Jobs</ActiveLink>

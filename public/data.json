@@ -5,8 +5,8 @@
     "title": "Software Engineer",
     "company": "Facebook",
     "job_type": [
-        "Full Time",
-        "Remote"
+      "Full Time",
+      "Remote"
     ],
     "responsibility": "Design and implement software applications using Java and Python.",
     "experience": "5+ years",
@@ -28,7 +28,7 @@
     "job_type": [
       "On Site",
       "Full Time"
-  ],
+    ],
     "responsibility": "Analyze large sets of data to identify trends and patterns that will help inform business decisions.",
     "experience": "2+ years",
     "job_description": "We are seeking a data analyst to join our team and help us optimize our operations through data-driven decision-making.",
@@ -49,7 +49,7 @@
     "job_type": [
       "Full Time",
       "Part Time"
-  ],
+    ],
     "responsibility": "Develop and execute a product roadmap to meet business objectives and drive user engagement.",
     "experience": "5+ years",
     "job_description": "We are looking for a skilled product manager to join our team and help us bring innovative products to market.",
@@ -62,68 +62,67 @@
       "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043"
     }
   },
-    {
-      "id": 4,
-      "logo": "./assets/All Images/tesla-9 1.png",
-      "title": "Backend Developer",
-      "company": "Tesla",
-      "job_type": [
-        "Part Time",
-        "On Site"
+  {
+    "id": 4,
+    "logo": "./assets/All Images/tesla-9 1.png",
+    "title": "Backend Developer",
+    "company": "Tesla",
+    "job_type": [
+      "Part Time",
+      "On Site"
     ],
-      "responsibility": "Develop and maintain backend systems",
-      "experience": "3+ years of experience with backend development",
-      "description": "We are seeking a highly skilled backend developer to join our team at Tesla. The successful candidate will be responsible for developing and maintaining the backend systems that power our electric vehicles and energy products.",
-      "education": "Bachelor's or higher degree in Computer Science or related field",
-      "location": "Palo Alto, CA",
-      "salary": "$120,000 - $150,000",
-      "contact": {
-        "phone": "555-555-5555",
-        "email": "jobs@tesla.com",
-        "address": "123 Main St, Palo Alto, CA"
-      }
-    },
-    {
-      "id": 5,
-      "logo": "./assets/All Images/netflix-4 1.png",
-      "title": "Machine Learning Engineer",
-      "company": "Netflix",
-      "job_type": [
-        "Remote",
-        "Full Time"
-    ],
-      "responsibility": "Develop and deploy machine learning models",
-      "experience": "5+ years of experience in machine learning",
-      "description": "Netflix is looking for a highly skilled Machine Learning Engineer to join our team. The successful candidate will be responsible for developing and deploying machine learning models that help us personalize and improve our customer experience.",
-      "education": "Master's or PhD in Computer Science or related field",
-      "location": "Remote",
-      "salary": "$150,000 - $200,000",
-      "contact": {
-        "phone": "555-555-5555",
-        "email": "jobs@netflix.com",
-        "address": "123 Main St, Los Gatos, CA"
-      }
-    },
-    {
-      "id": 6,
-      "logo": "./assets/All Images/Group 10021.png",
-      "title": "Frontend Developer",
-      "company": "Airbnb",
-      "job_type": [
-        "Remote",
-        "On Site"
-    ],
-      "responsibility": "Develop and maintain frontend applications",
-      "experience": "3+ years of experience with frontend development",
-      "description": "Airbnb is looking for a highly skilled frontend developer to join our team. The successful candidate will be responsible for developing and maintaining the frontend applications that power our platform and help millions of people find unique places to stay and experiences to enjoy.",
-      "education": "Bachelor's or higher degree in Computer Science or related field",
-      "location": "San Francisco, CA",
-      "salary": "$130,000 - $160,000",
-      "contact": {
-        "phone": "555-555-5555",
-        "email": "jobs@airbnb.com",
-        "address": "123 Main St, San Francisco, CA"
-      }
+    "responsibility": "Develop and maintain backend systems",
+    "experience": "3+ years of experience with backend development",
+    "job_description": "We are seeking a highly skilled backend developer to join our team at Tesla. The successful candidate will be responsible for developing and maintaining the backend systems that power our electric vehicles and energy products.",
+    "educational_description": "Bachelor's or higher degree in Computer Science or related field",
+    "location": "Palo Alto, CA",
+    "salary": "$120,000 - $150,000",
+    "contact": {
+      "phone": "555-555-5555",
+      "email": "jobs@tesla.com",
+      "address": "123 Main St, Palo Alto, CA"
     }
-  
+  },
+  {
+    "id": 5,
+    "logo": "./assets/All Images/netflix-4 1.png",
+    "title": "Machine Learning Engineer",
+    "company": "Netflix",
+    "job_type": [
+      "Remote",
+      "Full Time"
+    ],
+    "responsibility": "Develop and deploy machine learning models",
+    "experience": "5+ years of experience in machine learning",
+    "job_description": "Netflix is looking for a highly skilled Machine Learning Engineer to join our team. The successful candidate will be responsible for developing and deploying machine learning models that help us personalize and improve our customer experience.",
+    "educational_description": "Master's or PhD in Computer Science or related field",
+    "location": "Remote",
+    "salary": "$150,000 - $200,000",
+    "contact": {
+      "phone": "555-555-5555",
+      "email": "jobs@netflix.com",
+      "address": "123 Main St, Los Gatos, CA"
+    }
+  },
+  {
+    "id": 6,
+    "logo": "./assets/All Images/Group 10021.png",
+    "title": "Frontend Developer",
+    "company": "Airbnb",
+    "job_type": [
+      "Remote",
+      "On Site"
+    ],
+    "responsibility": "Develop and maintain frontend applications",
+    "experience": "3+ years of experience with frontend development",
+    "job_description": "Airbnb is looking for a highly skilled frontend developer to join our team. The successful candidate will be responsible for developing and maintaining the frontend applications that power our platform and help millions of people find unique places to stay and experiences to enjoy.",
+    "educational_description": "Bachelor's or higher degree in Computer Science or related field",
+    "location": "San Francisco, CA",
+    "salary": "$130,000 - $160,000",
+    "contact": {
+      "phone": "555-555-5555",
+      "email": "jobs@airbnb.com",
+      "address": "123 Main St, San Francisco, CA"
+    }
+  }
 ]

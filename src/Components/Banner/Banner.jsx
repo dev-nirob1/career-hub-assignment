@@ -1,6 +1,4 @@
 import React from 'react';
-import JobCategory from '../JobCategory/JobCategory';
-import Features from '../FeaturesJob/Features';
 
 const Banner = () => {
     return (
