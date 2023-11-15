@@ -19,9 +19,9 @@ const JobCard = ({ jobInfo }) => {
                 <button className='mr-4 border border-[#9873FF] py-2 px-6 rounded text-[#9873FF] font-medium hover:bg-gradient-to-r from-[#7E90FE] to-[#9873FF] hover:text-white'>{job_type[1]}</button>
             </div>
 
-            <div className='flex text-[#757575] text-xl font-medium'>
+            <div className='flex text-[#757575] gap-4 text-xl font-medium'>
                 <p>{location}</p>
-                <p>{salary}</p>
+                <p>Salary: {salary}</p>
             </div>
 
             <Link to={`/jobDetails/${id}`}>

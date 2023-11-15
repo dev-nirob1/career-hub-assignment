@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getShoppingCart } from '../../utilities/fakedb';
 import { useLoaderData } from 'react-router-dom';
+import AppliedCard from './AppliedCard';
 
 const AppliedJob = () => {
     const jobsData = useLoaderData()
@@ -18,7 +19,7 @@ const AppliedJob = () => {
             setJobs(filteredJobs);
         }
     }
-    console.log(jobs)
+    // console.log(jobs)
 
     useEffect(() => {
         let cart = []
@@ -35,25 +36,36 @@ const AppliedJob = () => {
 
 
     return (
-        <div className='container mx-auto'>
-            <div className='text-right mb-5'>
-                <div className="dropdown dropdown-bottom dropdown-end">
-                    <label tabIndex={0} className="btn m-1">Filter By</label>
-                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                        <li onClick={() => handleJobCategory('all')}><a>All</a></li>
-                        <li onClick={() => handleJobCategory('On Site')}><a>Onsite</a></li>
-                        <li onClick={() => handleJobCategory('Full Time')}><a>Full Time</a></li>
-                        <li onClick={() => handleJobCategory('Part Time')}><a>Part Time</a></li>
-                        <li onClick={() => handleJobCategory('Remote')}><a>Remote</a></li>
-                    </ul>
+        <>
+            <div className='py-20 text-center bg-gray-50'>
+                <h1 className='text-3xl md:text-5xl'>Applied Jobs</h1>
+            </div>
+            <div className='container my-16 mx-auto'>
+
+                <div className='text-right mb-5'>
+                    <div className="dropdown dropdown-bottom dropdown-end">
+                        <label tabIndex={0} className="btn m-1">Filter By <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                        </label>
+                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                            <li onClick={() => handleJobCategory('all')}><a>All</a></li>
+                            <li onClick={() => handleJobCategory('On Site')}><a>Onsite</a></li>
+                            <li onClick={() => handleJobCategory('Full Time')}><a>Full Time</a></li>
+                            <li onClick={() => handleJobCategory('Part Time')}><a>Part Time</a></li>
+                            <li onClick={() => handleJobCategory('Remote')}><a>Remote</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className='flex flex-col gap-5'>
+                    {
+                        jobs.map(job => <AppliedCard key={job.id} job={job} />)
+                    }
                 </div>
             </div>
-
-        {
-            jobs.length
-        }
-        </div>
+        </>
     );
 };
+
 
 export default AppliedJob;
