@@ -43,12 +43,12 @@ const AppliedJob = () => {
             <div className='container my-5 md:my-10 lg:my-16 mx-auto'>
 
                 <div className='text-right mb-5'>
-                    <div className="dropdown dropdown-bottom dropdown-end">
+                    <div className="dropdown dropdown-bottom z-[1] dropdown-end">
                         <label tabIndex={0} className="btn m-1">Filter By <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
                         </label>
-                        
+
                         <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                             <li onClick={() => handleJobCategory('all')}><a>All</a></li>
                             <li onClick={() => handleJobCategory('On Site')}><a>Onsite</a></li>
@@ -64,6 +64,12 @@ const AppliedJob = () => {
                     }
                 </div>
             </div>
+            {jobs.length === 0 && (
+                <div className="text-center -mt-5 mb-16 space-y-2">
+                    <h3 className="text-gray-700 text-2xl font-semibold">You haven't applied any jobs yet.</h3>
+                    <p className="text-gray-500 text-base md:text-lg font-medium">Start exploring and applying for jobs to build your career!</p>
+                </div>
+            )}
         </>
     );
 };

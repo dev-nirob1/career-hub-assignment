@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { addToDb } from '../../utilities/fakedb';
-import {  faLocationDot, faPhone, faSackDollar } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faPhone, faSackDollar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarCheck, faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
@@ -12,7 +12,7 @@ const JobDetails = () => {
     const id = useParams();
 
     useEffect(() => {
-        fetch('/public/data.json')
+        fetch('/data.json')
             .then((res) => res.json())
             .then((data) => {
                 setJobDetails(data);

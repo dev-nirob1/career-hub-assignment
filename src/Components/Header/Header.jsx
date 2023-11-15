@@ -18,7 +18,7 @@ const Header = () => {
                 <FontAwesomeIcon icon={open ? faTimes : faBars} className='h-6 w-6 text-gray-500' />
             </div>
 
-            <nav className={`md:flex md:items-center font-medium text-base lg:text-lg w-full md:w-auto absolute md:relative top-20 md:top-0 right-0 transition-all duration-300 ease-in-out ${open ? 'bg-gray-200' : ''} ${open ? 'block' : 'hidden'}`}>
+            <nav className={`md:flex md:items-center py-5 md:py-0 font-medium text-base z-10 lg:text-lg w-full md:w-auto absolute md:relative top-20 md:top-0 right-0 transition-all duration-300 ease-in-out ${open ? 'bg-gray-200' : ''} ${open ? 'block' : 'hidden'}`}>
 
                 <NavLink to="/" className={`px-3 py-2 rounded block md:inline-block mt-4 md:mt-0 mx-1 lg:mx-2 text-gray-700 hover:text-blue-500 ${!open ? 'hover:bg-gray-100' : ''}`}>Home</NavLink>
                 <NavLink to="/statistics" className={`px-3 py-2 rounded block md:inline-block mt-4 md:mt-0 mx-1 lg:mx-2 text-gray-700 hover:text-blue-500 ${!open ? 'hover:bg-gray-100' : ''}`}>Statistics</NavLink>
