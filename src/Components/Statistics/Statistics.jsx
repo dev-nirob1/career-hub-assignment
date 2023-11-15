@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Pie, PieChart, PolarGrid, Tooltip } from 'recharts';
+import { Pie, PieChart, ResponsiveContainer, PolarGrid, Tooltip } from 'recharts';
 
 const Statistics = () => {
     const data = [
@@ -31,18 +31,20 @@ const Statistics = () => {
             assignment: "Assignment-7",
             result: 56
         }
-    ]
+    ];
 
     return (
         <div className='text-center mt-10'>
-            <h3 className='text-4xl text-bold'>Statistics of My 7 Assignment Results in Pie Chart</h3>
+            <h3 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Statistics of My 7 Assignment Results in Pie Chart</h3>
 
-            <div >
-                <PieChart className='mx-auto' width={500} height={500}>
-                    <Pie data={data} dataKey="result" nameKey="assignment" outerRadius={200} innerRadius={20} fill="#8884d8"></Pie>
-                    <Tooltip />
-                    <PolarGrid />
-                </PieChart>
+            <div className='w-full'>
+                <ResponsiveContainer width="100%" height={400}>
+                    <PieChart margin={{ top: 50, right: 50, bottom: 50, left: 50 }}>
+                        <Pie data={data} dataKey="result" nameKey="assignment" outerRadius={150} innerRadius={20} fill="#8884d8"></Pie>
+                        <Tooltip />
+                        <PolarGrid />
+                    </PieChart>
+                </ResponsiveContainer>
             </div>
         </div>
     );

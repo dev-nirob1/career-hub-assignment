@@ -37,10 +37,10 @@ const AppliedJob = () => {
 
     return (
         <>
-            <div className='py-20 text-center bg-gray-50'>
-                <h1 className='text-3xl md:text-5xl'>Applied Jobs</h1>
+            <div className='py-5 md:py-10 lg:py-20 text-center bg-gray-50'>
+                <h1 className='text-3xl md:text-4xl lg:text-5xl'>Applied Jobs</h1>
             </div>
-            <div className='container my-16 mx-auto'>
+            <div className='container my-5 md:my-10 lg:my-16 mx-auto'>
 
                 <div className='text-right mb-5'>
                     <div className="dropdown dropdown-bottom dropdown-end">
@@ -49,7 +49,7 @@ const AppliedJob = () => {
                         </svg>
                         </label>
                         
-                        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                             <li onClick={() => handleJobCategory('all')}><a>All</a></li>
                             <li onClick={() => handleJobCategory('On Site')}><a>Onsite</a></li>
                             <li onClick={() => handleJobCategory('Full Time')}><a>Full Time</a></li>

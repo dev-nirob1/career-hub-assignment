@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='container mx-auto my-16 grid grid-cols-2 gap-5'>
+        <div className='container mx-auto my-5 md:my-10 lg:my-16 grid md:grid-cols-2 gap-5'>
 
             <div className="border rounded-md p-4">
                 <li className="text-2xl font-semibold text-[#474545]">What is Context API ?</li>
