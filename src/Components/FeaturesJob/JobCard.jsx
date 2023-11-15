@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const JobCard = ({ jobInfo }) => {
     const { id, logo, title, company, job_type, location, salary } = jobInfo;
-    console.log(jobInfo)
+    // console.log(jobInfo)
     return (
         <div className='border border-[#E8E8E8] p-10 rounded-lg '>
             <img className='w-[120px]' src={logo} alt="" />
