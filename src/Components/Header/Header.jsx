@@ -11,7 +11,7 @@ const Header = () => {
     };
 
     return (
-        <div className='flex justify-between items-center container mx-auto h-20'>
+        <div className='flex justify-between items-center container mx-auto h-20 px-5 bg-gray-50'>
             <h2 className='text-3xl md:text-4xl font-bold'>JobFinder</h2>
 
             <div className='order-2 md:hidden' onClick={handleToggle}>

@@ -12,13 +12,13 @@ import Home from './Components/Home/Home.jsx';
 import AppliedJob from './Components/AppliedJob/AppliedJob.jsx';
 import Blog from './Components/Blog/Blog.jsx';
 import JobDetails from './Components/JobDetails/JobDetails.jsx';
-// import FeaturesJob from './Components/FeaturesJob/FeaturesJob.jsx';
-// import JobDetails from './Components/FeaturesJob/JobDetails.jsx';
+import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

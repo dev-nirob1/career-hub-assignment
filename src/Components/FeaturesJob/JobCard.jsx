@@ -1,3 +1,6 @@
+import { faLocationDot, faSackDollar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -19,13 +22,13 @@ const JobCard = ({ jobInfo }) => {
                 <button className='mr-4 border border-[#9873FF] py-2 px-6 rounded text-[#9873FF] font-medium hover:bg-gradient-to-r from-[#7E90FE] to-[#9873FF] hover:text-white'>{job_type[1]}</button>
             </div>
 
-            <div className='flex text-[#757575] gap-4 text-xl font-medium'>
-                <p>{location}</p>
-                <p>Salary: {salary}</p>
+            <div className='flex text-[#757575] gap-3 md:gap-5 items-center text-lg md:text-xl font-medium'>
+                <p><FontAwesomeIcon icon={faLocationDot} /> {location}</p>
+                <p><FontAwesomeIcon icon={faSackDollar} /> Salary: {salary}</p>
             </div>
 
             <Link to={`/jobDetails/${id}`}>
-            <button className='py-3 px-4 mt-6 border text-xl font-semibold text-white rounded bg-gradient-to-r from-[#7E90FE] to-[#9873FF]'>View Details</button>
+                <button className='py-3 px-4 mt-6 border text-xl font-semibold text-white rounded bg-gradient-to-r from-[#7E90FE] to-[#9873FF]'>View Details</button>
             </Link>
 
         </div>

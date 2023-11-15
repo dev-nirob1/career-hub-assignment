@@ -48,6 +48,7 @@ const AppliedJob = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
                         </label>
+                        
                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                             <li onClick={() => handleJobCategory('all')}><a>All</a></li>
                             <li onClick={() => handleJobCategory('On Site')}><a>Onsite</a></li>
